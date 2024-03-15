@@ -1,0 +1,61 @@
+<!--Navbar-->
+<div class="container">
+    <div class="row text-center">
+        <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="/">SISTEMA WEB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active text-white-50" href="/">Cadastrar</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="/consultar">Consultar</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </div>
+
+    <!--Cabeçalho-->
+    <div class="row mt-3 m-1">
+        <h3 class="fw-normal pb-3">Cadastrar - Agendamentos de Potenciais Cliente</h3>
+        <p>Sistema Utilizado para agendamento de serviços</p>
+    </div>
+
+    <!--Form Cadastro-->
+    <div class="row">
+        <form>
+        <div class="form-group m-2">
+            <div class="form-group mb-3">
+                <label for="inputNome" class="mb-2">Nome:</label>
+                <input type="text" class="form-control" id="inputNome">
+            </div>
+            <div class="form-group mb-3">
+                <label for="inputTelefone" class="mb-2">Telefone:</label>
+                <input type="text" class="form-control" id="inputTelefone">
+            </div>
+            <div class="form-group mb-3">
+                <label for="inputOrigem" class="mb-2">Origem:</label>
+                <select class="form-select">
+                    <option value="0" selected>Celular</option>
+                    <option value="1">Computador</option>
+                </select>
+            </div>
+            <div class="form-group mb-3">
+                <label for="inputDate" class="mb-2">Data do Contato:</label>
+                <input type="date" class="form-control" id="inputDate">
+            </div>
+            <div class="form-group mb-3">
+                <label for="inputObs" class="mb-2">Observação:</label>
+                <textarea class="form-control" id="idObservacao" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </div>
+        </form>
+    </div>
+</div>
